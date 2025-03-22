@@ -1,0 +1,9 @@
+function validateLogin() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+    if (user === "" || pass === "") {
+        alert("Please fill in both fields.");
+        return false;
+    }
+    return true;
+}

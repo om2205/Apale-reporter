@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login - Banking Management Pro</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\my work\bank\stylecss.html" />
+    <script src="\Users\Admin\Desktop\my work\bank\Javascript.html"></script>
+</head>
+<body><center>
+    <header><h1>Login</h1></header>
+
+    <form runat="server" onsubmit="return validateLogin();">
+        <label>Username:</label><br />
+        <input type="text" id="username" name="username" /><br />
+        <label>Password:</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
+        <asp:Button runat="server" Text="Login" OnClick="Login_Click" />
+    </form>
+
+    <footer><p>&copy; 2025 Banking Management Pro</p></footer><center>
+</body>
+</html>

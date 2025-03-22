@@ -1,0 +1,20 @@
+using System;
+using System.Web.UI;
+
+public partial class login : Page
+{
+    protected void Login_Click(object sender, EventArgs e)
+    {
+        string username = Request.Form["username"];
+        string password = Request.Form["password"];
+
+        if (username == "admin" && password == "admin123")
+        {
+            Response.Redirect("dashboard.aspx");
+        }
+        else
+        {
+            Response.Write("<script>alert('Invalid credentials!');</script>");
+        }
+    }
+}
